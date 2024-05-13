@@ -1,9 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './components/Main';
 
 function App() {
   return (
     <div className="App">
+      <Header></Header>
+      <Main></Main>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,6 +25,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Footer></Footer>
     </div>
   );
 }
